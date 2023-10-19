@@ -3,9 +3,7 @@ import requests
 import re
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
-from flask_ngrok import run_with_ngrok
 app = Flask(__name__)
-run_with_ngrok(app)
 def extract_information(url):
     try:
         response = requests.get(url)
@@ -56,6 +54,6 @@ def scrape():
 
     return jsonify({'email': emails, 'mobile': mobiles, 'social': social_links})
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True)
     
