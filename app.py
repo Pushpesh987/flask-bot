@@ -4,6 +4,7 @@ import re
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 app = Flask(__name__)
+app.static_folder = 'static'
 def extract_information(url):
     try:
         response = requests.get(url)
