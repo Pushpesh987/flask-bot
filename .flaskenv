@@ -1,2 +1,2 @@
-FLASK_APP=index 
+FLASK_APP=app 
 FLASK_DEBUG=1
