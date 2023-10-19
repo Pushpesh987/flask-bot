@@ -1,4 +1,5 @@
 {
+  "name":"ppk1",
   "version": 2,
   "builds": [{ "src": "static/**/*", "use": "@vercel/static" }],
   "routes": [
